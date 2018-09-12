@@ -55,8 +55,8 @@ int max(int a,int b)
 int findHeight(struct BstNode* root)
 {
     if(root==NULL)
-        return -1;
-    return max(findHeight(root->left),findHeight(root->right))+1;
+        return 0;
+    return 1+max(findHeight(root->left),findHeight(root->right));
 }
 int main()
 {
